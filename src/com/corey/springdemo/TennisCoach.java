@@ -31,6 +31,7 @@ public class TennisCoach implements Coach {
 	public void doMyCleanupStuff() {
 		System.out.println(">> TennisCoach: inside doMyCleanupStuff");
 	}
+	// **** NOTE: For "prototype" scoped beans, Spring does not call the @PreDestroy method. ****
 	
 	/*
 	// Define a setter method
