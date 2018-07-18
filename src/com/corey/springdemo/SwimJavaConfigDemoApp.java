@@ -2,7 +2,7 @@ package com.corey.springdemo;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class JavaConfigDemoApp {
+public class SwimJavaConfigDemoApp {
 
 	public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class JavaConfigDemoApp {
 				new AnnotationConfigApplicationContext(SportConfig.class);
 		
 		// Get the bean from the Spring container
-		Coach theCoach = context.getBean("swimCoach", Coach.class);
+		Coach theCoach = context.getBean("tennisCoach", Coach.class);
 		
 		// Call a method on the bean
 		System.out.println(theCoach.getDailyWorkout());
